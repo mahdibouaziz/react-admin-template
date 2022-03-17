@@ -1,4 +1,5 @@
 import React from "react";
+import Dashbord from "./dashbord/Dashbord";
 import AppSidebar from "./sidebar/AppSidebar";
 
 const DefaultLayout = () => {
@@ -7,10 +8,10 @@ const DefaultLayout = () => {
       <AppSidebar />
       <div className="wrapper d-flex flex-column min-vh-100 bg-light">
         {/* <AppHeader /> */}
-        <p>Test258</p>
+        <p></p>
         <div className="body flex-grow-1 px-3">
           {/* <AppContent /> */}
-          <p>Test999</p>
+          <Dashbord />
         </div>
         {/* <AppFooter /> */}
       </div>
