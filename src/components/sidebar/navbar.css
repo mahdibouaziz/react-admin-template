@@ -1,0 +1,19 @@
+.company-admin-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-admin-logo p{
+    margin: 0;
+}
+
+.logout-admin-button{
+    width:100%;
+    height:100%;
+    color:#f2f2f2;
+}
+
+.logout-admin-button:hover{
+    color:#9f9f9f;
+}
