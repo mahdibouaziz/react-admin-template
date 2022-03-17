@@ -1,8 +1,10 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Dashbord from "./dashbord/Dashbord";
 import AppSidebar from "./sidebar/AppSidebar";
 import Users from "./users/Users";
+import Widgets from "./widgets/Widgets";
+
 
 const DefaultLayout = () => {
   return (
@@ -12,9 +14,16 @@ const DefaultLayout = () => {
         <p></p>
         <div className="body flex-grow-1 px-3">         
           <Routes>
+            
+          
+        
           <Route path="/admin/dashboard" element={ <Dashbord />} />
           <Route path="/admin/users" element={  <Users/>} />
+          <Route path="/admin/widgets" element={  <Widgets/>} />
+          {/* Redirection to dashbord */}
+          <Route path="*" element={<Navigate to="/admin/dashboard" />}/>
         </Routes>
+        
         </div>
       </div>
     </div>
