@@ -5,7 +5,6 @@ import {
   CSidebar,
   CSidebarBrand,
   CSidebarNav,
-  CSidebarToggler,
 } from "@coreui/react";
 import "./navbar.css"
 
@@ -16,8 +15,7 @@ import SimpleBar from "simplebar-react";
 import "simplebar/dist/simplebar.min.css";
 
 // sidebar nav config
-import navigation from "../_nav";
-import { Button } from "@coreui/coreui";
+import navigation from "./_navData";
 
 const AppSidebar = () => {
   return (
