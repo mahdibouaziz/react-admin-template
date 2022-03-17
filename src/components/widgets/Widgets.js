@@ -39,6 +39,7 @@ const Widgets = () => {
 
   return (
     <CCard className="mb-4">
+      <WidgetsDropdown/>
       <CCardHeader>Widgets</CCardHeader>
       <CCardBody>
        

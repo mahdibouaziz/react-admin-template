@@ -17,9 +17,10 @@ import "simplebar/dist/simplebar.min.css";
 // sidebar nav config
 import navigation from "./_navData";
 
+
 const AppSidebar = () => {
   return (
-    <CSidebar position="fixed">
+    <CSidebar id="adminSidebar" position="fixed">
       <CSidebarBrand className="d-none d-md-flex company-admin-logo" to="/">
         <p>Company Logo</p>
       </CSidebarBrand>
