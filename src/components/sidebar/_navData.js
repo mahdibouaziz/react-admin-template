@@ -12,7 +12,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Dashboard',
-    to: '/dashboard',
+    to: '/admin/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     badge: {
       color: 'success', // colors available: primary - secondary -success - danger - warning - info - light - dark
@@ -30,7 +30,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Users',
-    to: '/theme/colors',
+    to: '/admin/users',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
   },
 
@@ -44,23 +44,23 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Forms',
-    to: '/base',
+    to: '/forms',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
         name: 'Form1',
-        to: '/base/accordion',
+        to: '/admin/forms1',
       },
       {
         component: CNavItem,
         name: 'Form2',
-        to: '/base/breadcrumbs',
+        to: '/admin/forms2',
       },
       {
         component: CNavItem,
         name: 'Form3',
-        to: '/base/cards',
+        to: '/admin/forms3',
       },
     
     ],
@@ -69,23 +69,23 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Lists',
-    to: '/base',
+    to: '/lists',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
         name: 'List1',
-        to: '/base/accordion',
+        to: '/admin/list1',
       },
       {
         component: CNavItem,
         name: 'List2',
-        to: '/base/breadcrumbs',
+        to: '/admin/list2',
       },
       {
         component: CNavItem,
         name: 'List3',
-        to: '/base/cards',
+        to: '/admin/list3',
       },
     
     ],
