@@ -1,8 +1,6 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
-  cilCalculator,
-  cilChartPie,
   cilDrop,
   cilPuzzle,
   cilSpeedometer,
@@ -25,13 +23,13 @@ const _nav = [
   // Navitem Type Title
   {
     component: CNavTitle,
-    name: 'Theme',
+    name: 'Daily Review',
   },
 
   //Navitem Type - Link without badge
   {
     component: CNavItem,
-    name: 'Colors',
+    name: 'Users',
     to: '/theme/colors',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
   },
@@ -39,53 +37,58 @@ const _nav = [
   
   {
     component: CNavTitle,
-    name: 'Components',
+    name: 'Main Components',
   },
 
   // Navgroup type - Contains Navlinks
   {
     component: CNavGroup,
-    name: 'Base',
+    name: 'Forms',
     to: '/base',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
-        name: 'Accordion',
+        name: 'Form1',
         to: '/base/accordion',
       },
       {
         component: CNavItem,
-        name: 'Breadcrumb',
+        name: 'Form2',
         to: '/base/breadcrumbs',
       },
       {
         component: CNavItem,
-        name: 'Cards',
+        name: 'Form3',
         to: '/base/cards',
       },
     
     ],
   },
-  
-  
+
   {
-    component: CNavItem,
-    name: 'Charts',
-    to: '/charts',
-    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
-  },
-  
- 
-  {
-    component: CNavItem,
-    name: 'Widgets',
-    to: '/widgets',
-    icon: <CIcon icon={cilCalculator} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    },
+    component: CNavGroup,
+    name: 'Lists',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'List1',
+        to: '/base/accordion',
+      },
+      {
+        component: CNavItem,
+        name: 'List2',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'List3',
+        to: '/base/cards',
+      },
+    
+    ],
   },
   
 ]

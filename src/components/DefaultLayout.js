@@ -1,19 +1,18 @@
 import React from "react";
 import Dashbord from "./dashbord/Dashbord";
 import AppSidebar from "./sidebar/AppSidebar";
+import Users from "./users/Users";
 
 const DefaultLayout = () => {
   return (
     <div>
       <AppSidebar />
       <div className="wrapper d-flex flex-column min-vh-100 bg-light">
-        {/* <AppHeader /> */}
         <p></p>
         <div className="body flex-grow-1 px-3">
-          {/* <AppContent /> */}
-          <Dashbord />
+          {/* <Dashbord /> */}
+          <Users/>
         </div>
-        {/* <AppFooter /> */}
       </div>
     </div>
   );
